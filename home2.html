@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Seung-Hyun Times</title>
+    <style>
+      * {
+        align-items: center;
+        justify-content: center;
+      }
+      body {
+        margin: 300px;
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: tomato;
+      }
+      div {
+        display: flex;
+        background-color: wheat;
+        height: 300px;
+        width: 300px;
+        border: black solid;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .son {
+        height: 50px;
+        width: 50px;
+        background-color: teal;
+        border: white solid;
+      }
+      .xman {
+        border: white dotted;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="son"></div>
+      <div class="son xman"></div>
+      <div class="son"></div>
+    </div>
+  </body>
+</html>

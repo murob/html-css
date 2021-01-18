@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Seung-Hyun Times</title>
+    <style>
+      @keyframes circleAni {
+        0% {
+          transform: rotateX(0deg);
+        }
+        50% {
+          transform: rotateX(90deg);
+        }
+        100% {
+          transform: rotateX(180deg);
+        }
+      }
+      @keyframes squareAni {
+        0% {
+          top: 0px;
+          height: 60px;
+        }
+        50% {
+          top: 300px;
+          height: 120px;
+        }
+        100% {
+          top: 0%;
+          height: 60px;
+        }
+      }
+      body {
+        height: 100vh;
+        background-color: #6bbcbe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .object {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .circle {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 18px;
+      }
+      .square {
+        width: 15px;
+        height: 60px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 3px;
+      }
+      .c1 {
+        animation: circleAni 1s ease-in-out infinite;
+      }
+      .c2 {
+        animation: circleAni 1s ease-in-out infinite;
+      }
+      .c3 {
+        animation: circleAni 1s ease-in-out infinite;
+      }
+      .s1 {
+        animation: squareAni 1s ease-in-out infinite;
+        animation-delay: 0.1s;
+      }
+      .s2 {
+        animation: squareAni 1s ease-in-out infinite;
+        animation-delay: 0.2s;
+      }
+      .s3 {
+        animation: squareAni 1s ease-in-out infinite;
+        animation-delay: 0.3s;
+      }
+      .s4 {
+        animation: squareAni 1s ease-in-out infinite;
+        animation-delay: 0.4s;
+      }
+      .s5 {
+        animation: squareAni 1s ease-in-out infinite;
+        animation-delay: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article class="object">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </article>
+    </section>
+    <section>
+      <article class="object">
+        <div class="square s1"></div>
+        <div class="square s2"></div>
+        <div class="square s3"></div>
+        <div class="square s4"></div>
+        <div class="square s5"></div>
+      </article>
+    </section>
+  </body>
+</html>
